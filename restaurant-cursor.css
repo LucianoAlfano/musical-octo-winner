@@ -1,24 +1,26 @@
 /* Harbor & Vine fork cursor — loaded ONLY by the restaurant-*.html pages. */
 
 /* 1) Fallback: static fork cursor (works even if JS is off). */
-html.hv-fork,
-html.hv-fork body,
-html.hv-fork a,
-html.hv-fork button,
-html.hv-fork select,
-html.hv-fork summary,
-html.hv-fork label,
-html.hv-fork [role="button"]{
+html.hv-fork:not(#hv),
+html.hv-fork:not(#hv) body,
+html.hv-fork:not(#hv) a,
+html.hv-fork:not(#hv) button,
+html.hv-fork:not(#hv) select,
+html.hv-fork:not(#hv) summary,
+html.hv-fork:not(#hv) label,
+html.hv-fork:not(#hv) [role="button"]{
   cursor:url("fork-cursor-32.png") 3 3, auto !important;
 }
-html.hv-fork input:not([type="checkbox"]):not([type="radio"]):not([type="date"]),
-html.hv-fork textarea{cursor:text !important}
+html.hv-fork:not(#hv) input:not([type="checkbox"]):not([type="radio"]):not([type="date"]),
+html.hv-fork:not(#hv) textarea{cursor:text !important}
 
 /* 2) Animated fork (mouse/trackpad only, added by restaurant-cursor.js). */
-html.hv-fork-live,
-html.hv-fork-live *{cursor:none !important}
-html.hv-fork-live input:not([type="checkbox"]):not([type="radio"]):not([type="date"]),
-html.hv-fork-live textarea{cursor:text !important}
+html.hv-fork-live:not(#hv),
+html.hv-fork-live:not(#hv) *,
+html.hv-fork-live:not(#hv) *::before,
+html.hv-fork-live:not(#hv) *::after{cursor:none !important}
+html.hv-fork-live:not(#hv) input:not([type="checkbox"]):not([type="radio"]):not([type="date"]),
+html.hv-fork-live:not(#hv) textarea{cursor:text !important}
 
 .hv-fork-cursor{
   position:fixed;left:0;top:0;z-index:2147483647;
@@ -56,4 +58,11 @@ html.hv-fork-live textarea{cursor:text !important}
 @media (prefers-reduced-motion:reduce){
   .hv-fork-cursor img{transition:none}
   .hv-fork-tap{display:none}
+}
+
+/* Hide any cursor-follower injected by the shared theme scripts (old fork, ring, glow). */
+html.hv-fork-live body > [class*="cursor" i]:not(.hv-fork-cursor),
+html.hv-fork-live body > [id*="cursor" i],
+html.hv-fork-live .hv-old-cursor{
+  display:none !important;visibility:hidden !important;opacity:0 !important;
 }
