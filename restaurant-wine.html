@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html data-default="light" lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -26,6 +25,8 @@ try{s=localStorage.getItem('ndd-mode')}catch(e){}
 h.setAttribute('data-theme',(u==='dark'||u==='light')?u:(((s==='dark'||s==='light')?s:h.getAttribute('data-default'))||'light'))})();
 </script>
 <link href="site-upgrades.css" id="ndd-upgrade-css" rel="stylesheet"/>
+<link href="restaurant-extras.css" rel="stylesheet"/>
+<link href="restaurant-cursor.css" rel="stylesheet"/>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -37,7 +38,7 @@ h.setAttribute('data-theme',(u==='dark'||u==='light')?u:(((s==='dark'||s==='ligh
 <div class="menu"><a href="restaurant.html">Home</a><a href="restaurant-menu.html">Menu</a><a aria-current="page" href="restaurant-wine.html">Wine List</a><a href="restaurant-private-dining.html">Private Dining</a><a href="restaurant-about.html">Our Story</a><a href="restaurant-contact.html">Contact</a><a class="btn btn-sm" href="restaurant-reservations.html">Reserve</a></div>
 <button aria-controls="drawer" aria-expanded="false" aria-label="Menu" class="burger" id="burger"><i></i><i></i><i></i></button>
 </nav>
-<div class="drawer" id="drawer"><a href="restaurant.html">Home</a><a href="restaurant-menu.html">Menu</a><a aria-current="page" href="restaurant-wine.html">Wine List</a><a href="restaurant-private-dining.html">Private Dining</a><a href="restaurant-about.html">Our Story</a><a href="restaurant-contact.html">Contact</a><a href="restaurant-reservations.html">Reserve a table</a></div>
+<div class="drawer" id="drawer"><a href="restaurant.html">Home</a><a href="restaurant-menu.html">Menu</a><a aria-current="page" href="restaurant-wine.html">Wine List</a><a href="restaurant-private-dining.html">Private Dining</a><a href="restaurant-about.html">Our Story</a><a href="restaurant-contact.html">Contact</a><a href="restaurant-reservations.html">Reserve a table</a><a href="themes.html">← All website themes</a></div>
 </div>
 </header>
 <nav aria-label="Explore restaurant concept sections" class="concept-tabs concept-tabs--restaurant">
@@ -49,7 +50,7 @@ h.setAttribute('data-theme',(u==='dark'||u==='light')?u:(((s==='dark'||s==='ligh
 <div class="wrap">
 <footer class="site-foot">
 <span>Harbor &amp; Vine · fictional design concept</span>
-<span><a href="professional.html">← Calloway &amp; Reed</a>  ·  <a href="themes.html">All 8 themes</a>  ·  <a href="landscape.html">Field &amp; Form →</a></span>
+<span><a href="professional.html">← Calloway &amp; Reed</a>  ·  <a href="themes.html">All 8 themes</a>  ·  <a href="landscape.html">Field &amp; Form →</a></span>
 <span>Built by <a href="index.html"><u>NextDay Digital</u></a></span>
 </footer>
 <p class="disclosure">Harbor &amp; Vine is an original website concept created by NextDay Digital to demonstrate layout, typography and conversion flow for this industry. The business, staff, hours, address, telephone number, prices and reviews shown are invented placeholders. Not a real business, client project or endorsement. Your site would use your own branding, photography and approved content.</p>
@@ -63,6 +64,10 @@ h.setAttribute('data-theme',(u==='dark'||u==='light')?u:(((s==='dark'||s==='ligh
 <a class="dock-exit" href="themes.html">← Themes</a>
 </div>
 <script src="app.js"></script>
-<script src="wine-config.js"></script><script src="wine-list.js"></script><script src="theme-fx.js"></script>
-<script src="site-upgrades.js"></script></body>
+<script src="wine-config.js"></script>
+<script src="wine-list.js"></script>
+<script src="theme-fx.js"></script>
+<script src="site-upgrades.js"></script>
+<script src="restaurant-cursor.js"></script>
+</body>
 </html>

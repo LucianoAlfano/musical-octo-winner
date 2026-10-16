@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html data-default="light" lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -25,7 +24,11 @@
 try{s=localStorage.getItem('ndd-mode')}catch(e){}
 h.setAttribute('data-theme',(u==='dark'||u==='light')?u:(((s==='dark'||s==='light')?s:h.getAttribute('data-default'))||'light'))})();
 </script>
-<link href="site-upgrades.css" id="ndd-upgrade-css" rel="stylesheet"/></head>
+<link href="site-upgrades.css" id="ndd-upgrade-css" rel="stylesheet"/>
+<link href="restaurant-menu-live.css" rel="stylesheet"/>
+<link href="restaurant-extras.css" rel="stylesheet"/>
+<link href="restaurant-cursor.css" rel="stylesheet"/>
+</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div aria-hidden="true" class="bartop" id="prog"></div>
@@ -42,10 +45,10 @@ h.setAttribute('data-theme',(u==='dark'||u==='light')?u:(((s==='dark'||s==='ligh
 <nav aria-label="Explore restaurant concept sections" class="concept-tabs concept-tabs--restaurant">
 <div class="wrap"><a href="restaurant.html">Home</a><a aria-current="page" href="restaurant-menu.html">Menu</a><a href="restaurant-wine.html">Wine List</a><a href="restaurant-private-dining.html">Private Dining</a><a href="restaurant-about.html">Our Story</a><a href="restaurant-contact.html">Contact</a></div>
 </nav>
-<main id="main"><section class="subhero section ink"><div class="wrap"><span class="kicker">Seasonal dining</span><h1>Menu</h1><p class="lede">Explore menu for this restaurant website concept.</p><a class="sheet-admin-link" data-staff-link="" hidden="" href="https://docs.google.com/spreadsheets/d/1h3gh3p0kFrthk3AVDAoipkDWxo5NKiRSlvmOiKSaRGI/edit?usp=sharing" rel="noopener noreferrer" target="_blank">Open menu &amp; wine workbook <span aria-hidden="true">↗</span></a></div></section><section class="section" id="menu"><div class="wrap">
+<main id="main"><section class="subhero section ink"><div class="wrap"><span class="kicker">Seasonal dining</span><h1>Menu</h1><p class="lede">A short, seasonal menu that changes with what the boats and farms bring in. Updated live from the kitchen’s own spreadsheet.</p><a class="sheet-admin-link" data-staff-link="" hidden="" href="https://docs.google.com/spreadsheets/d/1h3gh3p0kFrthk3AVDAoipkDWxo5NKiRSlvmOiKSaRGI/edit?usp=sharing" rel="noopener noreferrer" target="_blank">Open menu &amp; wine workbook <span aria-hidden="true">↗</span></a></div></section><section class="section" id="menu"><div class="wrap">
 <div class="sec-head reveal">
 <div><span class="kicker">The menu</span><h2>This week at the pass</h2></div>
-<p class="lede">Written on Monday, printed on Tuesday, and changed again when the boats come in. Everything below is illustrative.</p>
+<p class="lede">Written on Monday, printed on Tuesday, and changed again when the boats come in. What you see below is pulled live from the kitchen’s sheet.</p>
 </div>
 <p aria-live="polite" class="menu-live-status muted-sm" id="menu-status" role="status">Loading the current menu…</p>
 <div aria-busy="true" class="live-menu-grid" id="menu-list"></div>
@@ -64,7 +67,7 @@ h.setAttribute('data-theme',(u==='dark'||u==='light')?u:(((s==='dark'||s==='ligh
 <div class="wrap">
 <footer class="site-foot">
 <span>Harbor &amp; Vine · fictional design concept</span>
-<span><a href="professional.html">← Calloway &amp; Reed</a>  ·  <a href="themes.html">All 8 themes</a>  ·  <a href="landscape.html">Field &amp; Form →</a></span>
+<span><a href="professional.html">← Calloway &amp; Reed</a>  ·  <a href="themes.html">All 8 themes</a>  ·  <a href="landscape.html">Field &amp; Form →</a></span>
 <span>Built by <a href="index.html"><u>NextDay Digital</u></a></span>
 </footer>
 <p class="disclosure">Harbor &amp; Vine is an original website concept created by NextDay Digital to demonstrate layout, typography and conversion flow for this industry. The business, staff, hours, address, telephone number, prices and reviews shown are invented placeholders. Not a real business, client project or endorsement. Your site would use your own branding, photography and approved content.</p>
@@ -78,8 +81,9 @@ h.setAttribute('data-theme',(u==='dark'||u==='light')?u:(((s==='dark'||s==='ligh
 <a class="dock-exit" href="themes.html">← Themes</a>
 </div>
 <script src="app.js"></script>
-<script src="menu-config.js"></script>
-<script src="menu-list.js"></script>
+<script src="restaurant-menu-live.js"></script>
 <script src="theme-fx.js"></script>
-<script src="site-upgrades.js"></script></body>
+<script src="site-upgrades.js"></script>
+<script src="restaurant-cursor.js"></script>
+</body>
 </html>

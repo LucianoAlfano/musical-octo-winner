@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html data-default="light" lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -25,7 +24,10 @@
 try{s=localStorage.getItem('ndd-mode')}catch(e){}
 h.setAttribute('data-theme',(u==='dark'||u==='light')?u:(((s==='dark'||s==='light')?s:h.getAttribute('data-default'))||'light'))})();
 </script>
-<link href="site-upgrades.css" id="ndd-upgrade-css" rel="stylesheet"/></head>
+<link href="site-upgrades.css" id="ndd-upgrade-css" rel="stylesheet"/>
+<link href="restaurant-extras.css" rel="stylesheet"/>
+<link href="restaurant-cursor.css" rel="stylesheet"/>
+</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div aria-hidden="true" class="bartop" id="prog"></div>
@@ -42,7 +44,7 @@ h.setAttribute('data-theme',(u==='dark'||u==='light')?u:(((s==='dark'||s==='ligh
 <nav aria-label="Explore restaurant concept sections" class="concept-tabs concept-tabs--restaurant">
 <div class="wrap"><a href="restaurant.html">Home</a><a href="restaurant-menu.html">Menu</a><a href="restaurant-wine.html">Wine List</a><a href="restaurant-private-dining.html">Private Dining</a><a aria-current="page" href="restaurant-about.html">Our Story</a><a href="restaurant-contact.html">Contact</a></div>
 </nav>
-<main id="main"><section class="subhero section ink"><div class="wrap"><span class="kicker">Our story</span><h1>The Kitchen</h1><p class="lede">Explore the kitchen for this restaurant website concept.</p></div></section><section class="section" id="kitchen"><div class="wrap">
+<main id="main"><section class="subhero section ink"><div class="wrap"><span class="kicker">Our story</span><h1>The Kitchen</h1><p class="lede">Fifty-two seats, one short menu, and a team that tastes everything before it leaves the pass.</p></div></section><section class="section" id="kitchen"><div class="wrap">
 <div class="split" style="--split:1fr 1.05fr;--split-gap:8%">
 <div class="reveal">
 <span class="kicker">In the kitchen</span>
@@ -53,8 +55,8 @@ h.setAttribute('data-theme',(u==='dark'||u==='light')?u:(((s==='dark'||s==='ligh
 </div>
 <div class="mosaic reveal" style="--d:120ms">
 <div class="shot"><img alt="Dining room at service" decoding="async" fetchpriority="low" height="1200" loading="lazy" src="restaurant.jpg" width="1800"/></div>
-<div class="shot"><img alt="Plating at the pass" decoding="async" fetchpriority="low" height="1200" loading="lazy" src="restaurant-pasta.jpg" width="1800"/></div>
-<div class="shot"><img alt="Wine poured at the bar" decoding="async" fetchpriority="low" height="1200" loading="lazy" src="restaurant-scallops.jpg" width="1800"/></div>
+<div class="shot"><img alt="Seared scallops plated at the pass" decoding="async" fetchpriority="low" height="1024" loading="lazy" src="restaurant-pasta.jpg" width="1052"/></div>
+<div class="shot"><img alt="Sliced steak with a herb and grain salad" decoding="async" fetchpriority="low" height="944" loading="lazy" src="restaurant-scallops.jpg" width="1115"/></div>
 </div>
 </div>
 </div></section><section class="section ink" id="wine"><div class="wrap">
@@ -84,7 +86,7 @@ h.setAttribute('data-theme',(u==='dark'||u==='light')?u:(((s==='dark'||s==='ligh
 <div class="wrap">
 <footer class="site-foot">
 <span>Harbor &amp; Vine · fictional design concept</span>
-<span><a href="professional.html">← Calloway &amp; Reed</a>  ·  <a href="themes.html">All 8 themes</a>  ·  <a href="landscape.html">Field &amp; Form →</a></span>
+<span><a href="professional.html">← Calloway &amp; Reed</a>  ·  <a href="themes.html">All 8 themes</a>  ·  <a href="landscape.html">Field &amp; Form →</a></span>
 <span>Built by <a href="index.html"><u>NextDay Digital</u></a></span>
 </footer>
 <p class="disclosure">Harbor &amp; Vine is an original website concept created by NextDay Digital to demonstrate layout, typography and conversion flow for this industry. The business, staff, hours, address, telephone number, prices and reviews shown are invented placeholders. Not a real business, client project or endorsement. Your site would use your own branding, photography and approved content.</p>
@@ -99,5 +101,7 @@ h.setAttribute('data-theme',(u==='dark'||u==='light')?u:(((s==='dark'||s==='ligh
 </div>
 <script src="app.js"></script>
 <script src="theme-fx.js"></script>
-<script src="site-upgrades.js"></script></body>
+<script src="site-upgrades.js"></script>
+<script src="restaurant-cursor.js"></script>
+</body>
 </html>
